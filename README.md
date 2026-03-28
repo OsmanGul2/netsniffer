@@ -45,13 +45,13 @@ This is an early prototype. The following is working:
 
 \### 🔹 v1 — Complete! (current)
 
-\[ ] TCP/UDP layer parsing
-
-\[ ] Filter by protocol and port
-
-\[ ] Basic traffic stats (packet count, bytes, rate)
-
-\[ ] Save output to log file
+- [x] Live packet capture on a configurable network interface
+- [x] Ethernet, IP, TCP, UDP, ICMP header parsing
+- [x] Source/destination IP and port extraction
+- [x] BPF capture filter support
+- [x] Running packet count and byte statistics
+- [x] Debug output and verbose mode
+- [x] Log file output support
 
 
 
