@@ -1,0 +1,55 @@
+# ─────────────────────────────────────────
+# NetSniffer — .gitignore
+# ─────────────────────────────────────────
+
+# ── Compiled Binaries ──
+netsniffer
+*.out
+*.exe
+
+# ── Object Files & Build Artifacts ──
+*.o
+*.a
+*.so
+*.dylib
+build/
+dist/
+bin/
+
+# ── Debug Symbols ──
+*.dSYM/
+*.su
+
+# ── Capture Files (don't commit real traffic) ──
+*.pcap
+*.pcapng
+*.cap
+
+# ── IDE & Editor Files ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── CMake (if adopted later) ──
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile.cmake
+
+# ── Dependency / Package Dirs ──
+vendor/
+deps/
+
+# ── Logs & Temp Files ──
+*.log
+*.tmp
+*.bak
+
+# ── Environment & Secrets ──
+.env
+.env.local
+secrets.*
