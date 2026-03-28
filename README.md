@@ -2,12 +2,12 @@
 
 > A low-level C/C++ tool for capturing and analyzing live network traffic in real time using raw packet inspection.
 
-![Status](https://img.shields.io/badge/status-WIP%20%2F%20prototype-orange)
-![Language](https://img.shields.io/badge/language-C%2FC%2B%2B-blue)
-![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS-lightgrey)
-![License](https://img.shields.io/badge/license-MIT-green)
+!\[Status](https://img.shields.io/badge/status-WIP%20%2F%20prototype-orange)
+!\[Language](https://img.shields.io/badge/language-C%2FC%2B%2B-blue)
+!\[Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS-lightgrey)
+!\[License](https://img.shields.io/badge/license-MIT-green)
 
----
+\---
 
 ## 📌 Overview
 
@@ -15,39 +15,63 @@
 
 This project is an **active work in progress** — the core packet capture pipeline is functional, with improvements and additional protocol support planned.
 
----
+\---
 
 ## ✨ Features
 
-- 🔍 **Live packet capture** from network interfaces in real time
-- 📦 **Packet parsing** — extracts and displays header fields from captured frames
-- 🎯 **Capture filters** — configurable BPF-style filters to target specific traffic
-- 🛠️ **Interface configuration** — supports specifying which network interface to listen on
-- 🐛 **Debug output** — verbose mode for diagnosing capture and detection issues
+* 🔍 **Live packet capture** from network interfaces in real time
+* 📦 **Packet parsing** — extracts and displays header fields from captured frames
+* 🎯 **Capture filters** — configurable BPF-style filters to target specific traffic
+* 🛠️ **Interface configuration** — supports specifying which network interface to listen on
+* 🐛 **Debug output** — verbose mode for diagnosing capture and detection issues
 
----
+\---
 
 ## 🚧 Current Status
 
-This is an **early prototype**. The following is working:
+This is an early prototype. The following is working:
 
-- [x] Raw packet capture on a configurable network interface
-- [x] Basic packet parsing (Ethernet, IP headers)
-- [x] Capture filter support
-- [x] Debugging output for packet detection issues
 
-Planned / in progress:
 
-- [ ] TCP/UDP layer parsing
-- [ ] Protocol-level dissection (HTTP, DNS, etc.)
-- [ ] Traffic statistics and summaries
-- [ ] Output to PCAP file format
-- [ ] Cross-platform support (Windows)
-- [ ] Interactive CLI / TUI dashboard
+\[x] Raw packet capture on a configurable network interface
 
----
+\[x] Basic packet parsing (Ethernet, IP headers)
 
-## 📂 Project Structure
+\[x] Capture filter support
+
+\[x] Debugging output for packet detection issues
+
+
+
+\### 🔹 v1 — In Progress (current)
+
+\[ ] TCP/UDP layer parsing
+
+\[ ] Filter by protocol and port
+
+\[ ] Basic traffic stats (packet count, bytes, rate)
+
+\[ ] Save output to log file
+
+
+
+\### 🔹 v2 — Planned
+
+\[ ] Deep protocol inspection (HTTP, DNS)
+
+\[ ] PCAP file export
+
+\[ ] Cross-platform support (Windows)
+
+
+
+\### 🔹 v3 — Future
+
+\[ ] Anomaly and threat detection
+
+\[ ] Interactive CLI / TUI dashboard
+
+\[ ] Alerting system
 
 ```
 netsniffer/
@@ -66,9 +90,9 @@ netsniffer/
 └── README.md
 ```
 
-> **Note:** Structure may evolve as the project grows.
+> \*\*Note:\*\* Structure may evolve as the project grows.
 
----
+\---
 
 ## ⚡ Quick Start
 
@@ -86,12 +110,12 @@ make
 sudo ./netsniffer -i eth0
 ```
 
----
+\---
 
 ## 🔧 Usage
 
 ```
-Usage: netsniffer [OPTIONS]
+Usage: netsniffer \[OPTIONS]
 
 Options:
   -i <interface>    Network interface to capture on (e.g., eth0, wlan0)
@@ -113,29 +137,30 @@ sudo ./netsniffer -i eth0 -f "tcp port 80" -v
 sudo ./netsniffer -i wlan0 -f "udp port 53"
 ```
 
----
+\---
 
 ## 📋 Requirements
 
-- Linux or macOS
-- GCC / G++ (C++17 or later)
-- `libpcap` development headers (`libpcap-dev` on Debian/Ubuntu)
-- Root privileges (required for raw packet capture)
+* Linux or macOS
+* GCC / G++ (C++17 or later)
+* `libpcap` development headers (`libpcap-dev` on Debian/Ubuntu)
+* Root privileges (required for raw packet capture)
 
----
+\---
 
 ## 🤝 Contributing
 
 Contributions, bug reports, and ideas are welcome — especially since this project is still growing! See [CONTRIBUTING.md](./CONTRIBUTING.md) to get started.
 
----
+\---
 
 ## 📄 License
 
 This project is licensed under the [MIT License](./LICENSE).
 
----
+\---
 
 ## 👤 Author
 
-Made by **[Your Name]** — feel free to reach out or open an issue if you have questions or suggestions.
+Made by **\[Your Name]** — feel free to reach out or open an issue if you have questions or suggestions.
+
