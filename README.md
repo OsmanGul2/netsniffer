@@ -162,5 +162,5 @@ This project is licensed under the [MIT License](./LICENSE).
 
 ## 👤 Author
 
-Made by **\[Your Name]** — feel free to reach out or open an issue if you have questions or suggestions.
+Made by **\Osman Gul** — feel free to reach out or open an issue if you have questions or suggestions.
 
