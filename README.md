@@ -9,7 +9,7 @@
 
 \---
 
-## 📌 Overview
+## Overview
 
 **NetSniffer** is a real-time network monitoring tool built in C/C++ that captures and inspects live traffic at the packet level. It leverages low-level network interfaces and capture filters to parse raw packets, making it useful for traffic analysis, debugging network behavior, and learning how data moves across a network.
 
@@ -17,13 +17,13 @@ This project is an **active work in progress** — the core packet capture pipel
 
 \---
 
-## ✨ Features
+##  Features
 
-* 🔍 **Live packet capture** from network interfaces in real time
-* 📦 **Packet parsing** — extracts and displays header fields from captured frames
-* 🎯 **Capture filters** — configurable BPF-style filters to target specific traffic
-* 🛠️ **Interface configuration** — supports specifying which network interface to listen on
-* 🐛 **Debug output** — verbose mode for diagnosing capture and detection issues
+*  **Live packet capture** from network interfaces in real time
+*  **Packet parsing** — extracts and displays header fields from captured frames
+*  **Capture filters** — configurable BPF-style filters to target specific traffic
+*  **Interface configuration** — supports specifying which network interface to listen on
+*  **Debug output** — verbose mode for diagnosing capture and detection issues
 
 \---
 
@@ -94,7 +94,7 @@ netsniffer/
 
 \---
 
-## ⚡ Quick Start
+##  Quick Start
 
 See [SETUP.md](./SETUP.md) for full installation and build instructions.
 
@@ -139,7 +139,7 @@ sudo ./netsniffer -i wlan0 -f "udp port 53"
 
 \---
 
-## 📋 Requirements
+##  Requirements
 
 * Linux or macOS
 * GCC / G++ (C++17 or later)
@@ -148,19 +148,19 @@ sudo ./netsniffer -i wlan0 -f "udp port 53"
 
 \---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions, bug reports, and ideas are welcome — especially since this project is still growing! See [CONTRIBUTING.md](./CONTRIBUTING.md) to get started.
 
 \---
 
-## 📄 License
+##  License
 
 This project is licensed under the [MIT License](./LICENSE).
 
 \---
 
-## 👤 Author
+##  Author
 
 Made by **\Osman Gul** — feel free to reach out or open an issue if you have questions or suggestions.
 
